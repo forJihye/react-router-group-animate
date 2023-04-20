@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 import ReactDOM from "react-dom/client";
 import { MemoryRouter } from "react-router-dom";
