@@ -7,28 +7,31 @@ type GlobalState = {
 const pages = [
   {
     path: "/",
-    to: "privacy"
+    to: "/privacy",
   },
   {
     path: "/privacy",
-    to: "cutType"
+    to: "/cutType",
   },
   {
     path: "/cutType",
-    to: "/"
-  }
+    to: "/",
+  },
 ];
 
 export const state: GlobalState = {
   pages,
   currentPage: pages[0].path,
-  direction: "right"
+  direction: "right",
 };
 
 const store = {
   setDirection(direction: string) {
     state.direction = direction;
-  }
+  },
+  setPage(path: string) {
+    state.currentPage = path;
+  },
 };
 
 export default store;
